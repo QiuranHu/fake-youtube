@@ -28,7 +28,7 @@ class App extends React.Component {
         const response = await youtube.get('search', {params: {
             part: 'snippet',
             maxResults: 5,
-            key: 'AIzaSyCViAqHwr3dTX8tbs4buOwJFxH43twyHK4',
+            key: 'your api',
             q: searchTerm,
         }});
         this.setState( {videos: response.data.items, selectedVideo: response.data.items[0]});
